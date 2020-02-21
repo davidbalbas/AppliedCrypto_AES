@@ -35,7 +35,6 @@ void keyExpansion(unsigned char* key, unsigned char* w) {
     w[4*i+3] = w[4*i-13] ^ temp[3];
     i += 1;
   }
-  delete []temp;
 }
 
 void addRoundKey(unsigned char state[][4], unsigned char* w) {
